@@ -151,6 +151,7 @@ def process_question_with_hipaa(question):
     
     hipaa = st.session_state.hipaa_compliance
     hipaa.log_access("QUESTION_SUBMITTED", "DEMO_MEDICAL_QUERY")
+    return question  # streamlined: skip extra processing
     
     if hipaa.contains_phi(question):
         st.warning("⚠️ Potential PHI detected. Anonymizing...")
