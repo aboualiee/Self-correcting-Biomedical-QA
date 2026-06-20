@@ -7,8 +7,17 @@ applies a corrector to flagged answers, and serves the result through a
 HIPAA-aware application layer.
 
 This is a research prototype for biomedical QA. It is not a medical device and is
-not intended for clinical use. See `docs/model_card.md` for intended use and
-limitations.
+not intended for clinical use. See the [model card](docs/model_card.md) for
+intended use and limitations.
+
+## Documentation
+
+- [Architecture](docs/architecture.md): system design and data flow, with the
+  pipeline diagram.
+- [Engineering and deployment](docs/engineering.md): how the three models are
+  loaded, quantized, and served behind a single Hugging Face endpoint.
+- [Model card](docs/model_card.md): intended use, training data, evaluation
+  results, and limitations.
 
 ## Pipeline
 
@@ -57,20 +66,20 @@ cp .env.example .env      # set your own values
 streamlit run src/app.py
 ```
 
-### Configuration
+## Configuration
 
 | Variable | Purpose |
 |---|---|
 | `HF_TOKEN` | Hugging Face token for model access |
 | `REDIS_HOST`, `REDIS_PORT`, `REDIS_USERNAME`, `REDIS_PASSWORD` | Secure cache (optional; the app runs without it) |
 
-Do not commit `.env`. A template is provided in `.env.example`.
+Do not commit `.env`. A template is provided in [`.env.example`](.env.example).
 
 ## Evaluation
 
 The system is evaluated per component using ROUGE-L, BERTScore, BLEU, and
 classification accuracy and F1. Full results, including the metrics chart and
-known limitations, are in `docs/model_card.md`.
+known limitations, are in the [model card](docs/model_card.md).
 
 ## Origin
 
@@ -81,4 +90,4 @@ detection, correction, and retrieval, advised by Alaa Bakhti.
 
 ## License
 
-See `LICENSE`.
+Released under the MIT License. See [LICENSE](LICENSE).

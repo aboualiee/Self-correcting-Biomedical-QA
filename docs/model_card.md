@@ -2,7 +2,7 @@
 
 ## Overview
 
-- Name: Self-Correcting RARE (Retrieval-Augmented Reasoning Engine)
+- Name: Self-Correcting RARE (Retrieval-Augmented Reasoning)
 - Task: Biomedical question answering with evidence-grounded reasoning, error
   detection, and self-correction.
 - Components: Llama-3.1-8B with LoRA generator; SciBERT error detector; Flan-T5
