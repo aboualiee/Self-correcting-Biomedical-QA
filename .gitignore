@@ -1,0 +1,6 @@
+
+.env
+hipaa_audit.log
+__pycache__/
+_archive/
+.vscode/
