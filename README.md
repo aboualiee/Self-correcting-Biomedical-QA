@@ -81,6 +81,12 @@ The system is evaluated per component using ROUGE-L, BERTScore, BLEU, and
 classification accuracy and F1. Full results, including the metrics chart and
 known limitations, are in the [model card](docs/model_card.md).
 
+## Resources
+
+- [Research Poster](https://drive.google.com/file/d/1Eq3vYundTcvwx023KoGUk91V1GdpHMe_/view)
+- [Demo Video](https://youtu.be/2kyPwGk86YU)
+- [Datasets on Hugging Face](https://huggingface.co/datasets/Maikobi/RARE_output_and_generated_datasets)
+
 ## Origin
 
 Developed as a master's thesis project at EPITA Graduate School of Computer
